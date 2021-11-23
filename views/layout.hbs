@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+  <link rel='stylesheet' href='/stylesheets/styles.css' />
+  {{!--
+  <link rel="stylesheet" href="/stylesheets/bootstrap.min.css"> --}}
+  <script href="javascripts/scripts.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.15.3/js/all.js" crossorigin="anonymous"></script>
+  <!-- Google fonts-->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
+    type="text/css" />
+</head>
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+  <div class="container-fluid">
+    
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="/index">Home</a>
+        </li>
+        <li class="nav-item">
+
+          <a class="nav-link {{#if project}}active{{/if}}" href="project">Project</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link {{#if about}}active{{/if}}" href="about">About Us</a>
+        </li>
+        <li class="nav-item">
+
+          <a class="nav-link {{#if contact}}active{{/if}}" href="contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</nav>
+
+<body>
+  {{{body}}}
+</body>
+<footer class="footer text-center" style="background-image: url(assets/img/lap.jpg); opacity: 0.8;;" >
+  <div class="container"  >
+
+    <div class="row">
+      <!-- Footer Location-->
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <h4 class="text-uppercase mb-4">Location</h4>
+        <p class="lead mb-0">
+          Kitchener, Ontario, Canada
+          <br />
+
+        </p>
+      </div>
+      <!-- Footer Social Icons-->
+      <div class="col-lg-4 mb-5 mb-lg-0">
+        <h4 class="text-uppercase mb-4">Around the Web</h4>
+        <a class="btn btn-outline-light btn-social mx-1" target="_blank" href="https://github.com/darshan5640"><i
+            class="fab fa-fw fa-github"></i></a>
+        <a class="btn btn-outline-light btn-social mx-1" target="_blank" 
+          href="https://www.linkedin.com/in/darshil-gadhiya"><i class="fab fa-fw fa-linkedin-in"></i></a>
+        <a class="btn btn-outline-light btn-social mx-1" target="_blank" 
+          href="https://twitter.com/gadhiyadarshil"><i class="fab fa-twitter"></i></a>
+      </div>
+      <!-- Footer About Text-->
+      <div class="col-lg-4">
+        <h4 class="text-uppercase mb-4">About Me</h4>
+        <p class="lead mb-0">
+          Hi, I’m Darshil. I am familiar and work on a daily basis with HTML, CSS, JavaScript, Bootstrap and other modern frameworks.
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</html>
+
